@@ -1,0 +1,40 @@
+<%- include('partials/header'); -%>
+<div class="container">
+  <h1>Compose</h1>
+
+  <form action="/compose" method="POST">
+    <label for="title" class="form-label">Title</label>
+    <input
+      type="text"
+      name="postTitle"
+      class="form-control mb-3"
+      id="title"
+      autocomplete="off"
+    />
+    <label for="post" class="form-label">Post</label>
+    <textarea
+      class="form-control mb-3"
+      name="postContent"
+      id=""
+      cols="30"
+      rows="10"
+    ></textarea>
+    <label for="image" class="form-label">Insert Image</label>
+    <input
+      type="file"
+      name="image"
+      class="form-control mb-3"
+      id="image"
+      accept="image/*"
+    />
+    <div>
+      <input
+        type="submit"
+        value="Publish"
+        class="btn btn-primary mb-3 btn-block"
+      />
+    </div>
+  </form>
+</div>
+
+<%- include('partials/footer'); -%>

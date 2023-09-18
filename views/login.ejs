@@ -1,0 +1,26 @@
+<%- include('partials/header') -%>
+
+<div class="container">
+  <h1 style="text-align: center">Login</h1>
+  <form action="/login" method="post">
+    <div class="md-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" name="username" id="email" class="form-control" />
+    </div>
+    <div>
+      <label for="password" class="form-label">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        class="form-control"
+      />
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <input type="submit" value="Login" class="btn btn-primary mt-4" />
+    </div>
+    <a href="/register" style="display: block; text-align: center"
+      >New Registration</a
+    >
+  </form>
+</div>

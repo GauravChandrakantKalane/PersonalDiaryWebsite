@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------- Main Page -------- */
+
+.main_heading {
+  text-align: center;
+  color: rgb(46, 231, 170);
+  text-shadow: 2px 2px 3px black;
+}
+
+.main_para {
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(114, 33, 190);
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mybtn {
+  margin: 10px;
+}
+.main2 {
+  position: relative;
+}
+
+/* ------ HomePage -------- */
+
+.home-page-heading {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.home-page-post-title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: capitalize;
+  color: darkgoldenrod;
+  text-shadow: 2px 1px 3px black;
+  display: inline-block;
+}
+.home-page-date {
+  display: inline-block;
+  border: 1.5px solid black;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 2px;
+  box-shadow: 2px 1.5px 3px grey;
+}
+
+.home-page-page-content {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  color: rgb(112, 107, 107);
+}
+
+.home-page-link {
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(114, 33, 190);
+  transition: all 0.5s;
+}
+
+.home-page-link:hover {
+  color: #771243;
+}
+
+.home-page-logout {
+  position: absolute;
+  right: 20px;
+  top: 90px;
+}
+.home-page-logout-link {
+  text-decoration: none;
+}
+
+.home-page-heading-three {
+  color: rgb(190, 108, 122);
+  text-align: center;
+  margin-top: 150px;
+}
+
+/* ------- POST PAGE CSS ---------- */
+
+.post-page-heading {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  border-left: 5px solid goldenrod;
+  border-right: 5px solid goldenrod;
+  margin: auto;
+  width: 45%;
+  color: crimson;
+}
+
+.post-page-date {
+  color: gray;
+  text-align: right;
+  margin-right: 55px;
+}
+
+.post-page-content {
+  text-align: justify;
+  width: 70%;
+  margin: auto;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: oblique;
+  font-size: 1.4rem;
+}
+
+/* ------------- ABOUT US PAGE CSS ------------ */
+
+.section {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.heading {
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(to right, red, yellow);
+  font-size: 4rem;
+  padding: 15px 0;
+  font-family: "Playfair Display", serif;
+  text-shadow: 2px 2px 3px black;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.info-container {
+  color: black;
+  font-size: 2rem;
+  border: 2px solid black;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: justify;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 3px 3px 4px grey;
+}
+
+.aboutus {
+  text-align: center;
+}
+
+.aboutus img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 4px grey;
+}
+
+.row {
+  margin: 0;
+}
+
+/* ------------- CONTACT US PAGE CSS --------------- */
+
+.contact-us-heading {
+  font-family: "Pattaya", sans-serif;
+  font-weight: lighter;
+  font-size: 4rem;
+  margin-bottom: 50px;
+  color: #ff449f;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+}
+
+.contact-us-para {
+  font-family: "Stint Ultra Condensed", cursive;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 4px black;
+  color: #ac0d0d;
+}
+
+.container:hover .contact-us-para {
+  color: white;
+}
+
+.contact-us-img {
+  margin: 5px 8px;
+  width: 30px;
+  height: 30px;
+}
+.mycontainer {
+  position: relative;
+  border: 4px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  margin: 50px 50px 0 50px;
+  text-decoration: none;
+}
+
+.mycontainer:hover {
+  box-shadow: 0 0 20px grey;
+}
+
+.inner {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #0e49b5;
+  z-index: -1;
+  transition: height 1s;
+}
+
+.mycontainer:hover .cover {
+  height: 100%;
+  z-index: -1;
+}
+
+.address {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.address p {
+  visibility: hidden;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.mycontainer:hover .address p {
+  visibility: visible;
+}
+
+.address-container:hover .inner {
+  visibility: hidden;
+}
+
+/* ------ FOOTER ------ */
+
+footer {
+  background-color: limegreen;
+  margin-top: auto;
+  bottom: 0;
+  text-align: center;
+  padding: 5px;
+  z-index: 1;
+}

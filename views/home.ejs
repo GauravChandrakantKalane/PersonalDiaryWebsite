@@ -1,0 +1,25 @@
+<%- include('partials/header'); -%>
+<div class="container">
+  <div>
+    <h1 class="home-page-heading">HOME</h1>
+  </div>
+  <% if (posts.length==0){ %>
+  <h3 class="home-page-heading-three">
+    <%=name%>🎉🎉 START WRITING YOUR THOUGHTS, MEMORIES RIGHT NOW 🎉🎉
+  </h3>
+  <%}else{%> <% posts.forEach(function(myPost){ %>
+  <h1 class="home-page-post-title"><%=myPost.title%></h1>
+  <p class="home-page-date"><%= myPost.date %></p>
+  <p class="home-page-page-content">
+    <%=myPost.post.substring(0,100) + " ..." %>
+    <a class="home-page-link" href="/posts/<%=myPost._id%>">ReadMore</a>
+  </p>
+  <hr />
+  <%})%> <% }%>
+
+  <a href="/compose"><button class="btn btn-danger mb-3">Compose</button></a>
+  <button class="btn btn-warning home-page-logout">
+    <a class="home-page-logout-link" href="/logout">LOGOUT</a>
+  </button>
+</div>
+<%- include('partials/footer'); -%>
